@@ -119,14 +119,53 @@
 // const playerName = "Chris"
 // let credits = 45
 
-const basePrice = 520;
-const discount = 120;
-let shippingCost = 12;
-let shippingTime = "5-12 days"
+// const basePrice = 520;
+// const discount = 120;
+// let shippingCost = 12;
+// let shippingTime = "5-12 days"
 
-shippingCost = 15;
-shippingTime = "7-14 days";
+// shippingCost = 15;
+// shippingTime = "7-14 days";
 
-const fullPrice = basePrice - discount + shippingCost;
+// const fullPrice = basePrice - discount + shippingCost;
 
-console.log("Total cost: " + fullPrice + ". it will arrive in " +shippingTime)
+// console.log("Total cost: " + fullPrice + ". it will arrive in " +shippingTime)
+
+// const container = document.getElementById("container")
+
+// container.innerHTML = "<button onclick='buy()'>BUY</button>"
+
+// function buy() {
+//     // container.addEventListener("click", function(){
+//     //     container.innerHTML += "<p>" + "Thank you for buying!" + "</p>"
+//     //  })
+//     // or
+//  container.innerHTML += "<p>Thank you for buying!</p>"
+// }
+
+// const recipient = "james"
+// const sender = "chris"
+
+// const email = `hey ${recipient}! how is it going! --${sender}`
+
+// console.log(email)
+
+const welcomeEl = document.getElementById("welcome-el")
+function greetUser(greeting, name) {
+    welcomeEl.textContent = `${greeting},  ${name}`
+}
+
+greetUser('Welcome Aristocrat', 'Chris')
+
+function add(a, b) {
+return a + b;
+}
+
+function getFirst(arr) {
+    return arr[0];
+
+}
+
+ let first = getFirst([1, 2, 3, 4])
+
+ console.log(first)
